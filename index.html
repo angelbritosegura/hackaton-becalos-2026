@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panel de Mantenimiento Predictivo · FlotaIA</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <span class="logo-icon">🚌</span>
+    <div class="header-text">
+      <h1>FlotaIA · Panel de Mantenimiento Predictivo</h1>
+      <p>EJE 3 · Prevención y Disponibilidad · Becalos Hackaton 2026</p>
+    </div>
+  </header>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main>
+
+    <!-- COLUMNA IZQUIERDA: Formulario de datos de la unidad -->
+    <section class="card">
+      <h2 class="card-title">
+        <span class="icon">🔍</span>
+        Datos de la Unidad
+        <span class="readonly-badge">Solo lectura</span>
+      </h2>
+
+      <div class="form-group">
+        <label for="unit-id">ID de la Unidad</label>
+        <span class="field-value" id="unit-id" role="textbox" aria-readonly="true">
+          BCA-2026-0042
+        </span>
+      </div>
+
+      <div class="form-group">
+        <label for="mileage">Kilometraje</label>
+        <span class="field-value" id="mileage" role="textbox" aria-readonly="true">
+          87,340 km
+        </span>
+      </div>
+
+      <div class="form-group">
+        <label for="fault-codes">Códigos de Falla</label>
+        <span class="field-value code-list" id="fault-codes" role="textbox" aria-readonly="true">
+          P0301 · P0420 · B1234
+        </span>
+      </div>
+
+      <div class="form-group">
+        <label for="op-conditions">Condiciones de Operación</label>
+        <span class="field-value" id="op-conditions" role="textbox" aria-readonly="true">
+          Ruta urbana · Alta carga · Temperatura 38 °C
+        </span>
+      </div>
+    </section>
+
+    <!-- COLUMNA DERECHA: Tarjeta de resultados -->
+    <section class="card results-card">
+      <h2 class="card-title">
+        <span class="icon">📊</span>
+        Resultados del Análisis
+      </h2>
+
+      <!-- Semáforo de Riesgo -->
+      <div class="semaforo-section">
+        <p class="semaforo-label">Semáforo de Riesgo</p>
+        <div class="semaforo" role="img" aria-label="Semáforo de riesgo en nivel Medio">
+          <div class="light" aria-hidden="true"></div>
+          <div class="light active-yellow" aria-hidden="true"></div>
+          <div class="light" aria-hidden="true"></div>
+        </div>
+        <span class="risk-level-badge">⚠ Riesgo Medio</span>
+      </div>
+
+      <!-- Indicadores rápidos -->
+      <div class="stats-row">
+        <div class="stat-box">
+          <div class="stat-value">78%</div>
+          <div class="stat-label">Probabilidad de falla</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-value">~12 días</div>
+          <div class="stat-label">Tiempo estimado</div>
+        </div>
+      </div>
+
+      <!-- Alerta de Acción Sugerida -->
+      <div class="alert-box alert-warning" role="alert">
+        <span class="alert-icon">⚠️</span>
+        <div class="alert-content">
+          <div class="alert-title">Acción Sugerida</div>
+          <div class="alert-action">REVISAR</div>
+          <div class="alert-detail">
+            Inspección de motor y sistema de escape en los próximos 3 días.
+          </div>
+        </div>
+      </div>
+
+      <!-- Recomendaciones -->
+      <div class="recommendations">
+        <h3>Pasos recomendados</h3>
+        <ul>
+          <li>Verificar sensor de oxígeno (P0420)</li>
+          <li>Diagnóstico de cilindro 1 (P0301)</li>
+          <li>Revisar sistema eléctrico (B1234)</li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>FlotaIA · Prototipo para Becalos Hackaton 2026 · EJE 3: Mantenimiento Predictivo de Flota</p>
+  </footer>
+
+</body>
+</html>
