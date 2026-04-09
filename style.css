@@ -339,3 +339,35 @@ footer {
     font-size: 1.1rem;
   }
 }
+/* --- Botón Confirmar --- */
+.recommendations-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.8rem;
+}
+
+.btn-confirm {
+  background-color: var(--purple-mid);
+  color: var(--white);
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: 0 2px 6px rgba(107, 63, 160, 0.3);
+}
+
+.btn-confirm:hover {
+  background-color: var(--purple-dark);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(59, 31, 110, 0.4);
+}
+
+.btn-confirm:active {
+  transform: translateY(0);
+}

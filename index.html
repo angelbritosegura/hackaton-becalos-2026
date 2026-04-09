@@ -25,8 +25,15 @@
       <h2 class="card-title">
         <span class="icon">🔍</span>
         Datos de la Unidad
-        <span class="readonly-badge">Solo lectura</span>
+
       </h2>
+
+      <div class="form-group">
+        <label for="unit-id">ID del coductor</label>
+        <span class="field-value" id="unit-id" role="textbox" aria-readonly="true">
+          ADF2089
+        </span>
+      </div>
 
       <div class="form-group">
         <label for="unit-id">ID de la Unidad</label>
@@ -48,11 +55,22 @@
           P0301 · P0420 · B1234
         </span>
       </div>
+      <h2 class="card-title">
+        <span class="icon">🔍</span>
+        Datos de Operación/ clima
+      </h2>
+      
 
       <div class="form-group">
         <label for="op-conditions">Condiciones de Operación</label>
         <span class="field-value" id="op-conditions" role="textbox" aria-readonly="true">
-          Ruta urbana · Alta carga · Temperatura 38 °C
+          Ruta urbana · Alta carga
+        </span>
+      </div>
+      <div class="form-group">
+        <label for="climate">Condiciones de Clima</label>
+        <span class="field-value" id="climate" role="textbox" aria-readonly="true">
+          Temperatura 38 °C/ Humedad 65%
         </span>
       </div>
     </section>
@@ -100,14 +118,17 @@
       </div>
 
       <!-- Recomendaciones -->
-      <div class="recommendations">
-        <h3>Pasos recomendados</h3>
-        <ul>
-          <li>Verificar sensor de oxígeno (P0420)</li>
-          <li>Diagnóstico de cilindro 1 (P0301)</li>
-          <li>Revisar sistema eléctrico (B1234)</li>
-        </ul>
-      </div>
+     <div class="recommendations">
+  <div class="recommendations-header">
+    <h3>Pasos recomendados</h3>
+    <button class="btn-confirm">Confirmar</button>
+  </div>
+  <ul>
+    <li>Verificar sensor de oxígeno (P0420)</li>
+    <li>Diagnóstico de cilindro 1 (P0301)</li>
+    <li>Revisar sistema eléctrico (B1234)</li>
+  </ul>
+</div>
     </section>
 
   </main>
