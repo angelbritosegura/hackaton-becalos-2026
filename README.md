@@ -71,16 +71,4 @@ El panel visualiza la salida de un modelo de **mantenimiento predictivo** basado
 
 ---
 
-## 🛠️ Cómo visualizar el prototipo
-
-1. Clona el repositorio:
-   ```bash
-   git clone https://github.com/angelbritosegura/hackaton-becalos-2026.git
-   ```
-2. Abre `index.html` directamente en tu navegador.
-
-No se requieren dependencias ni servidor adicional.
-
----
-
-*Desarrollado para Becalos Hackaton 2026 · EJE 3: Mantenimiento Predictivo de Flota de Transporte.*
+*Desarrollado por Angel Brito Segura, Juan Pablo Jacobo Estrada & Samuel Frias Contreras*
