@@ -24,55 +24,55 @@
     <section class="card">
       <h2 class="card-title">
         <span class="icon">🔍</span>
-        Datos de la Unidad
-
+        Formulario de la Unidad
       </h2>
 
+      <p style="font-size: 0.85rem; color: var(--gray-mid); margin-bottom: 1.5rem;">
+        Ingresa los datos para que el agente A.M.P.E.R. evalúe el riesgo mecánico.
+      </p>
+
       <div class="form-group">
-        <label for="unit-id">ID del coductor</label>
-        <span class="field-value" id="unit-id" role="textbox" aria-readonly="true">
-          ADF2089
-        </span>
+        <label for="id-conductor">ID del Conductor</label>
+        <input type="text" id="id-conductor" class="field-value" value="ADF2089" readonly>
       </div>
 
       <div class="form-group">
-        <label for="unit-id">ID de la Unidad</label>
-        <span class="field-value" id="unit-id" role="textbox" aria-readonly="true">
-          BCA-2026-0042
-        </span>
+        <label for="id-unidad">ID de la Unidad</label>
+        <input type="text" id="id-unidad" class="field-value" value="BCA-2026-0042" readonly>
       </div>
 
       <div class="form-group">
         <label for="mileage">Kilometraje</label>
-        <span class="field-value" id="mileage" role="textbox" aria-readonly="true">
-          87,340 km
-        </span>
+        <input type="text" id="mileage" class="field-value" value="87,340 km" readonly>
       </div>
 
       <div class="form-group">
         <label for="fault-codes">Códigos de Falla</label>
-        <span class="field-value code-list" id="fault-codes" role="textbox" aria-readonly="true">
-          P0301 · P0420 · B1234
-        </span>
+        <input type="text" id="fault-codes" class="field-value code-list" value="P0301 · P0420 · B1234" readonly>
       </div>
-      <h2 class="card-title">
-        <span class="icon">🔍</span>
-        Datos de Operación/ clima
+
+      <h2 class="card-title" style="margin-top: 2rem;">
+        <span class="icon">🌤️</span>
+        Contexto Operativo
       </h2>
       
-
       <div class="form-group">
         <label for="op-conditions">Condiciones de Operación</label>
-        <span class="field-value" id="op-conditions" role="textbox" aria-readonly="true">
-          Ruta urbana · Alta carga
-        </span>
+        <select id="op-conditions" class="field-value" disabled>
+          <option selected>Ruta urbana · Alta carga</option>
+          <option>Terracería · Baja carga</option>
+        </select>
       </div>
+
       <div class="form-group">
         <label for="climate">Condiciones de Clima</label>
-        <span class="field-value" id="climate" role="textbox" aria-readonly="true">
-          Temperatura 38 °C/ Humedad 65%
-        </span>
+        <input type="text" id="climate" class="field-value" value="Temp 38 °C / Humedad 65%" readonly>
       </div>
+
+      <button class="btn-evaluar-ia" type="button">
+        ⚡ Evaluar Riesgo con IA
+      </button>
+
     </section>
 
     <!-- COLUMNA DERECHA: Tarjeta de resultados -->
@@ -135,7 +135,11 @@
 
   <!-- ===== FOOTER ===== -->
   <footer>
-    <p>FlotaIA · Prototipo para Becalos Hackaton 2026 · EJE 3: Mantenimiento Predictivo de Flota</p>
+    <p>
+      FlotaIA · Prototipo para Becalos Hackaton 2026 · 
+      Desarrolladores: 
+      <i>Angel Brito Segura, Juan Pablo Jacobo Estrada & Samuel Frias Contreras<i>
+    </p>
   </footer>
 
 </body>

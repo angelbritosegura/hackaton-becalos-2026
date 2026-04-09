@@ -371,3 +371,31 @@ footer {
 .btn-confirm:active {
   transform: translateY(0);
 }
+
+/* --- Botón Principal de Evaluación --- */
+.btn-evaluar-ia {
+  width: 100%;
+  background: linear-gradient(135deg, var(--purple-dark) 0%, var(--purple-mid) 100%);
+  color: var(--white);
+  border: none;
+  padding: 1rem;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  box-shadow: 0 4px 15px rgba(107, 63, 160, 0.4);
+  transition: var(--transition);
+}
+
+.btn-evaluar-ia:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(107, 63, 160, 0.6);
+}
+
+input.field-value, select.field-value {
+  font-family: inherit;
+  box-sizing: border-box;
+}
