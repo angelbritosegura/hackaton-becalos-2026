@@ -20,6 +20,8 @@
   <!-- ===== MAIN CONTENT ===== -->
   <main>
 
+    <input type="checkbox" id="eval-trigger" class="hidden-checkbox">
+
     <!-- COLUMNA IZQUIERDA: Formulario de datos de la unidad -->
     <section class="card">
       <h2 class="card-title">
@@ -69,9 +71,9 @@
         <input type="text" id="climate" class="field-value" value="Temp 38 °C / Humedad 65%" readonly>
       </div>
 
-      <button class="btn-evaluar-ia" type="button">
+      <label for="eval-trigger" class="btn-evaluar-ia" role="button">
         ⚡ Evaluar Riesgo con IA
-      </button>
+      </label>
 
     </section>
 
